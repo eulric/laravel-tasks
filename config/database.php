@@ -46,11 +46,11 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', 'item2lab5-server.mysql.database.azure.com'),
+            'host' => env('DB_HOST', 'item2-2lab5-server.mysql.database.azure.com'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'item2lab5-server.mysql.database.azure.com'),
-            'username' => env('DB_USERNAME', 'njwsnreszk'),
-            'password' => env('DB_PASSWORD', '576$GFnXJZZxnRHX'),
+            'database' => env('DB_DATABASE', 'item2-2lab5-database'),
+            'username' => env('DB_USERNAME', 'eyinvkucya'),
+            'password' => env('DB_PASSWORD', '$NZyZDv9yeSF$v$I'),
             'unix_socket' => env('DB_SOCKET', '3306'),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
@@ -130,22 +130,21 @@ return [
 
         'default' => [
             'url' => env('REDIS_URL'),
-            'host' => env('REDIS_HOST', 'item2lab5-server.mysql.database.azure.com'),
-            'username' => env('njwsnreszk'),
-            'password' => env('576$GFnXJZZxnRHX'),
-            'port' => env('REDIS_PORT', '3306'),
-            'database' => env('REDIS_DB', 'item2lab5-server.mysql.database.azure.com'),
-            'scheme' => 'tls',
+            'host' => env('REDIS_HOST', '127.0.0.1'),
+            'username' => env('REDIS_USERNAME'),
+            'password' => env('REDIS_PASSWORD'),
+            'port' => env('REDIS_PORT', '6379'),
+            'database' => env('REDIS_DB', '0'),
         ],
 
         'cache' => [
+            'scheme' => 'tls'
             'url' => env('REDIS_URL'),
-            'host' => env('REDIS_HOST', 'item2lab5-server.mysql.database.azure.com'),
-            'username' => env('Rnjwsnreszk'),
-            'password' => env('576$GFnXJZZxnRHX'),
-            'port' => env('REDIS_PORT', '3306'),
+            'host' => env('AZURE_REDIS_HOST', '127.0.0.1'),
+            'username' => env('REDIS_USERNAME'),
+            'password' => env('AZURE_REDIS_PASSWORD'),
+            'port' => env('AZURE_REDIS_PORT', '6379'),
             'database' => env('AZURE_REDIS_DATABASE', '1'),
-            'scheme' => 'tls',
         ],
 
     ],
