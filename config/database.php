@@ -46,12 +46,12 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'host' => env('DB_HOST', 'item2lab5-server.mysql.database.azure.com'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
-            'unix_socket' => env('DB_SOCKET', ''),
+            'database' => env('DB_DATABASE', 'item2lab5-server.mysql.database.azure.com'),
+            'username' => env('DB_USERNAME', 'njwsnreszk'),
+            'password' => env('DB_PASSWORD', '576$GFnXJZZxnRHX'),
+            'unix_socket' => env('DB_SOCKET', '3306'),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
@@ -130,11 +130,12 @@ return [
 
         'default' => [
             'url' => env('REDIS_URL'),
-            'host' => env('REDIS_HOST', '127.0.0.1'),
-            'username' => env('REDIS_USERNAME'),
-            'password' => env('REDIS_PASSWORD'),
-            'port' => env('REDIS_PORT', '6379'),
-            'database' => env('REDIS_DB', '0'),
+            'host' => env('REDIS_HOST', 'item2lab5-server.mysql.database.azure.com'),
+            'username' => env('njwsnreszk'),
+            'password' => env('576$GFnXJZZxnRHX'),
+            'port' => env('REDIS_PORT', '3306'),
+            'database' => env('REDIS_DB', 'item2lab5-server.mysql.database.azure.com'),
+            'scheme' => 'tls',
         ],
 
         'cache' => [
