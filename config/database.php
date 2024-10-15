@@ -140,11 +140,12 @@ return [
 
         'cache' => [
             'url' => env('REDIS_URL'),
-            'host' => env('REDIS_HOST', '127.0.0.1'),
-            'username' => env('REDIS_USERNAME'),
-            'password' => env('REDIS_PASSWORD'),
-            'port' => env('REDIS_PORT', '6379'),
-            'database' => env('REDIS_CACHE_DB', '1'),
+            'host' => env('REDIS_HOST', 'item2lab5-server.mysql.database.azure.com'),
+            'username' => env('Rnjwsnreszk'),
+            'password' => env('576$GFnXJZZxnRHX'),
+            'port' => env('REDIS_PORT', '3306'),
+            'database' => env('AZURE_REDIS_DATABASE', '1'),
+            'scheme' => 'tls',
         ],
 
     ],
